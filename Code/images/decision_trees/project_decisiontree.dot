@@ -1,17 +1,17 @@
 digraph Tree {
 node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
 edge [fontname=helvetica] ;
-0 [label="MaritalStatus <= 1.5\ngini = 0.558\nsamples = 700\nvalue = [411, 10, 9, 60, 210]\nclass = Homeowner", fillcolor="#f4cbae"] ;
-1 [label="MaritalStatus <= 0.5\ngini = 0.407\nsamples = 392\nvalue = [295, 8, 0, 50, 39]\nclass = Homeowner", fillcolor="#eca571"] ;
+0 [label="MaritalStatus <= 1.5\ngini = 0.555\nsamples = 700\nvalue = [410, 15, 11, 46, 218]\nclass = Homeowner", fillcolor="#f5cdb0"] ;
+1 [label="SALES_VALUE <= 2.01\ngini = 0.394\nsamples = 385\nvalue = [294, 10, 0, 40, 41]\nclass = Homeowner", fillcolor="#eca26d"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="gini = 0.292\nsamples = 279\nvalue = [233, 8, 0, 24, 14]\nclass = Homeowner", fillcolor="#ea985d"] ;
+2 [label="gini = 0.739\nsamples = 25\nvalue = [7, 7, 0, 4, 7]\nclass = Homeowner", fillcolor="#ffffff"] ;
 1 -> 2 ;
-3 [label="gini = 0.597\nsamples = 113\nvalue = [62, 0, 0, 26, 25]\nclass = Homeowner", fillcolor="#f4cbad"] ;
+3 [label="gini = 0.345\nsamples = 360\nvalue = [287, 3, 0, 36, 34]\nclass = Homeowner", fillcolor="#eb9d66"] ;
 1 -> 3 ;
-4 [label="AgeGroups <= 2.5\ngini = 0.548\nsamples = 308\nvalue = [116, 2, 9, 10, 171]\nclass = Unknown", fillcolor="#f8c6ed"] ;
+4 [label="AgeGroups <= 4.5\ngini = 0.547\nsamples = 315\nvalue = [116, 5, 11, 6, 177]\nclass = Unknown", fillcolor="#f7c2ec"] ;
 0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
-5 [label="gini = 0.444\nsamples = 141\nvalue = [35, 1, 4, 2, 99]\nclass = Unknown", fillcolor="#ef87d9"] ;
+5 [label="gini = 0.538\nsamples = 294\nvalue = [99, 5, 11, 6, 173]\nclass = Unknown", fillcolor="#f5b4e7"] ;
 4 -> 5 ;
-6 [label="gini = 0.576\nsamples = 167\nvalue = [81, 1, 5, 8, 72]\nclass = Homeowner", fillcolor="#fdf3ec"] ;
+6 [label="gini = 0.308\nsamples = 21\nvalue = [17, 0, 0, 0, 4]\nclass = Homeowner", fillcolor="#eb9f68"] ;
 4 -> 6 ;
 }
