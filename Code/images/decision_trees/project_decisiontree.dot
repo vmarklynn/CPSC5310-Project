@@ -1,17 +1,17 @@
 digraph Tree {
-node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
-edge [fontname=helvetica] ;
-0 [label="MaritalStatus <= 1.5\ngini = 0.555\nsamples = 700\nvalue = [410, 15, 11, 46, 218]\nclass = Homeowner", fillcolor="#f5cdb0"] ;
-1 [label="SALES_VALUE <= 2.01\ngini = 0.394\nsamples = 385\nvalue = [294, 10, 0, 40, 41]\nclass = Homeowner", fillcolor="#eca26d"] ;
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="MaritalStatus <= 1.5\ngini = 0.55\nsamples = 700\nvalue = [416, 12, 11, 50, 211]\nclass = Homeowner", fillcolor="#f4caac"] ;
+1 [label="Compensation <= 2.5\ngini = 0.387\nsamples = 372\nvalue = [286, 8, 2, 41, 35]\nclass = Homeowner", fillcolor="#eca26c"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="gini = 0.739\nsamples = 25\nvalue = [7, 7, 0, 4, 7]\nclass = Homeowner", fillcolor="#ffffff"] ;
+2 [label="gini = 0.272\nsamples = 262\nvalue = [222, 8, 0, 24, 8]\nclass = Homeowner", fillcolor="#e9965a"] ;
 1 -> 2 ;
-3 [label="gini = 0.345\nsamples = 360\nvalue = [287, 3, 0, 36, 34]\nclass = Homeowner", fillcolor="#eb9d66"] ;
+3 [label="gini = 0.577\nsamples = 110\nvalue = [64, 0, 2, 17, 27]\nclass = Homeowner", fillcolor="#f3c7a7"] ;
 1 -> 3 ;
-4 [label="AgeGroups <= 4.5\ngini = 0.547\nsamples = 315\nvalue = [116, 5, 11, 6, 177]\nclass = Unknown", fillcolor="#f7c2ec"] ;
+4 [label="AgeGroups <= 2.5\ngini = 0.553\nsamples = 328\nvalue = [130, 4, 9, 9, 176]\nclass = Unknown", fillcolor="#f9d1f0"] ;
 0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
-5 [label="gini = 0.538\nsamples = 294\nvalue = [99, 5, 11, 6, 173]\nclass = Unknown", fillcolor="#f5b4e7"] ;
+5 [label="gini = 0.464\nsamples = 142\nvalue = [37, 3, 3, 2, 97]\nclass = Unknown", fillcolor="#f08edb"] ;
 4 -> 5 ;
-6 [label="gini = 0.308\nsamples = 21\nvalue = [17, 0, 0, 0, 4]\nclass = Homeowner", fillcolor="#eb9f68"] ;
+6 [label="gini = 0.567\nsamples = 186\nvalue = [93, 1, 6, 7, 79]\nclass = Homeowner", fillcolor="#fcefe5"] ;
 4 -> 6 ;
 }
